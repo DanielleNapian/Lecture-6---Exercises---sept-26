@@ -66,68 +66,35 @@
 	}
   //slide 27 (Name the Shape)
   
-	  #include <stdio.h>
-	  #include <math.h>
+		int shapeSides{};
 
-	double const PI = 3.14159265358979323846f;
+	cout << "how many sides does your shape have?" << endl;
+	cin >> shapeSides;
 
-	int main()
-	{
-		int choice = 0;
-		printf("Select your shape:\n");
-		printf("1. Triangle\n");
-		printf("2. Rectangle\n");
-		printf("3. Square\n");
-		printf("4. Ellipse\n");
-		printf("5. Circle\n");
-		printf("6. Exit\n");
-		do
-		{
-			printf("Choice: ");
-			scanf("%d", &choice);
-
-			if (choice == 1)
-			{
-				double a, b, c;
-				printf("Enter length of three sides: ");
-				scanf(% lf % lf % lf, &a, &b, &c);
-				Triangle triang(a, b, c);
-				printf("The area of triangle is %0.3lf\n", triang.getArea());
-			}
-			else if (choice == 2)
-			{
-				double l, w;
-				printf("Enter length and width: ");
-				scanf("%lf %lf" & l, &w);
-				Rectangle rect(l, w);
-				printf("The area of rectangle is %0.3lf\n", rect.getArea());
-			}
-			else if (choice == 3)
-			{
-				double s;
-				printf("Enter sidelength: ");
-				scanf("%lf", &s);
-				Rectangle square(s);
-				printf("The area of square is %0.3lf\n", square.getArea());
-			}
-			else if (choice == 4)
-			{
-				double a, b;
-				printf("Enter the length of major and minor axis: ");
-				scanf("%lf %lf", &a, &b);
-				Ellipse ellip(a, b);
-				printf("The area of ellipse is %0.3lf\n", ellip.getArea());
-			}
-			else if (choice == 5)
-			{
-				double r;
-				printf("Enter the radius: ");
-				scanf("%lf", &r);
-				Ellipse circle(r);
-				printf("The area of circle is %0.3lf\n", circle.getArea());
-			}
-
-		} while (choice != 6);
-		return 0;
-
+	if (shapeSides == 3) {
+		cout << "This shape is a triangle" << endl;
+	}else if (shapeSides == 4) {
+		cout << "shape is a square" << endl;
 	}
+	else if (shapeSides == 5) {
+		cout << "This shape is a pentagon" << endl;
+	}
+	else if (shapeSides == 6) {
+		cout << "This shape is a hexagon" << endl;
+	}
+	else if (shapeSides == 7) {
+		cout << "This shape is a heptagon or otherwise known as septagon" << endl;
+	}
+	else if (shapeSides == 8) {
+		cout << "This shape is a octagon" << endl;
+	}
+	else if (shapeSides == 9) {
+		cout << "This shape is a nonagon" << endl;
+	}
+	else if (shapeSides == 10) {
+		cout << "This shape is a decagon" << endl;
+	}
+	else {
+		cout << "This shape  cannot be identified with current limitations" << endl;
+	}
+
