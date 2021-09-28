@@ -66,7 +66,7 @@
 	}
   //slide 27 (Name the Shape)
   
-		int shapeSides{};
+	int shapeSides{};
 
 	cout << "how many sides does your shape have?" << endl;
 	cin >> shapeSides;
@@ -83,7 +83,7 @@
 		cout << "This shape is a hexagon" << endl;
 	}
 	else if (shapeSides == 7) {
-		cout << "This shape is a heptagon or otherwise known as septagon" << endl;
+		cout << "This shape is a heptagon" << endl;
 	}
 	else if (shapeSides == 8) {
 		cout << "This shape is a octagon" << endl;
