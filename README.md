@@ -1,4 +1,58 @@
 # Lecture-6---Exercises---sept-26
+//GOOD MORNING
+
+	// am.pm.cpp : This file contains the 'main' function. Program execution begins and ends there.
+	//
+
+	#include<iostream>
+	using namespace std;
+	int main()
+	{
+		cout << "Enter the time in 24 hour pattern to see whether it Morning, Afternoon, Evening or Night\n";
+		double time;
+		cin >> time;
+		if (time < 12)
+		{
+			cout << "Good Morning";
+		}
+		else if (time >= 12 && time < 18)
+		{
+			cout << "Good Afternoon";
+			}
+		else if (time >=18 && time < 21)
+		{
+			cout << "Good Evening";
+		}
+		else if (time >=21 && time <24)
+		{
+			cout << "Good Night";
+		}
+		else
+		{
+			cout << "Incorrect input";
+		}
+	}
+//VOTE
+
+	#include <iostream>
+	using namespace std;
+
+	int main()
+	{
+	    cout << "Kindly enter your age to see whether you can vote or not!\n";
+	    int age;
+	    cin >> age;
+	    if(age>=18)
+	    {
+		cout << "You can vote";
+
+	    }
+	    else
+	    {
+		cout << "Sorry not today";
+	    }
+
+	}
 //slide 24 (Odd or Even)
 
 	#include<iostream>
